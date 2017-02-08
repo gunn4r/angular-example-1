@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="gunnarApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body ng-controller="mainCtrl">
+
+    <h1>Hello, {{myName.mySuperName}}</h1>
+    <p>orem ipsum dolor sit amet, consectetur adipisicing elit. Ex consectetur quisquam quibusdam cupiditate possimus fuga facere perspiciatis ad, debitis obcaecati, deserunt maiores molestiae eligendi ut, nisi hic? Nihil deleniti, dolorem.</p>
+    <input type="text" ng-model="login.name"></input>
+    <input type="password" ng-model="login.pass"></input><br>
+    {{login}}<br>
+    {{login.name}}<br>
+    {{login.name}}<br>
+
+    <br><br>
+    <h3>NGREPEAT EXAMPLE</h3>
+    <!--This will loop over the array. Each item in the array is represented by ITEM in this example.-->
+    <li ng-repeat="item in data">{{item}}</li>
+
+
+    <!--scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="mainController.js"></script>
+    <script src="mainService.js"></script>
+</body>
+</html>
